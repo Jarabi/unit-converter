@@ -4,7 +4,111 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #6943FF;
+    --background-color: #F4F4F4;
+    --dark-color: #1C1C1C;
+    --white-color: #FFFFFF;
+    --heading-color: #5A537B;
+    --text-color: #353535;
+    --button-text-color: #3D3D3D;
+    --input-border-color: #B295FF;
+}
+
 body {
     font-family: 'Inter', sans-serif;
+    font-size: 16px;
     background-color: #1C1C1C;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    height: 729px;
+    margin: 100px auto;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    padding: 0 20px;
+    background-color: var(--primary-color);
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white-color);
+    margin-top: 10px;
+}
+
+.header input {
+    width: 117px;
+    height: 83px;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--input-border-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.header input:focus {
+    outline: none;
+}
+
+.header button {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--button-text-color);
+    width: 117px;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* conversion */
+
+.conversion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+.conversion .card {
+    width: 500px;
+    height: 109px;
+    background-color: var(--white-color);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.conversion .card h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+
+.conversion .card .output {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-color);
 }

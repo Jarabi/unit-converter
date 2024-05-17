@@ -14,6 +14,32 @@
     <title>Unit Converter</title>
 </head>
 <body>
-    
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="header">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="text" name="unit-value" id="unit-value" value="20">
+            <button>Convert</button>
+        </div>
+
+        <!-- Conversion -->
+
+        <div class="conversion">
+            <div class="card">
+                <h2>Length (Meter/Feet)</h2>
+                <p class="output length">20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+            </div>
+            <div class="card">
+                <h2>Volume (Liters/Gallons)</h2>
+                <p class="output volume">20 liters = 5.284 gallons | 20 gallons = 75.708 liters</p>
+            </div>
+            <div class="card">
+                <h2>Mass (kilograms/Pounds)</h2>
+                <p class="output mass">20 kilos = 65.616 pounds | 20 pounds = 6.096 kilos</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
